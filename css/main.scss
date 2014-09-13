@@ -81,3 +81,15 @@ body {
     @include icon("/images/feature-recommended", "png", 200px,120px);
   }
 }
+
+#footer {
+  p.navbar-text {
+    float: none;
+    text-align: center;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
