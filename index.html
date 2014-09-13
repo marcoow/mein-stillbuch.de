@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300,400">
     <link rel="stylesheet" href="/css/main.css">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -40,16 +41,16 @@
       </div>
       <div id="features" class="row">
         <div class="col-md-3 col-xs-12 text-center">
-          <i class="feature-clock"></i>
+          <a href="#clock"><i class="feature-clock"></i></a>
         </div>
         <div class="col-md-3 col-xs-12 text-center">
-          <i class="feature-history"></i>
+          <a href="#history"><i class="feature-history"></i></a>
         </div>
         <div class="col-md-3 col-xs-12 text-center">
-          <i class="feature-bottle"></i>
+          <a href="#bottle"><i class="feature-bottle"></i></a>
         </div>
         <div class="col-md-3 col-xs-12 text-center">
-          <i class="feature-recommended"></i>
+          <a href="#recommended"><i class="feature-recommended"></i></a>
         </div>
       </div>
     </div>
@@ -72,6 +73,14 @@
       ga('create', 'UA-53237918-7', 'auto');
       ga('require', 'displayfeatures');
       ga('send', 'pageview');
+
+      $(document).ready(function() {
+        $('#features a').click(function() {
+          var feature = $(this).attr('href').replace(/^#/, '');
+          $('#main-image').attr('class', feature);
+          console.log();
+        });
+      });
     </script>
 	</body>
 </html>
