@@ -19,23 +19,23 @@ body {
     margin-top: 50px;
 
     &.default {
-      @include icon("/images/hero-default", "png", 455px, 632px);
+      @include icon("/images/hero-default", "png", 472px, 632px);
     }
 
     &.clock {
-      @include icon("/images/hero-clock", "png", 455px, 632px);
+      @include icon("/images/hero-clock", "png", 472px, 632px);
     }
 
     &.history {
-      @include icon("/images/hero-history", "png", 455px, 632px);
+      @include icon("/images/hero-history", "png", 472px, 632px);
     }
 
     &.bottle {
-      @include icon("/images/hero-bottle", "png", 455px, 632px);
+      @include icon("/images/hero-bottle", "png", 472px, 632px);
     }
 
     &.recommended {
-      @include icon("/images/hero-recommended", "png", 455px, 632px);
+      @include icon("/images/hero-recommended", "png", 472px, 632px);
     }
   }
 
