@@ -16,6 +16,8 @@ body {
   border-bottom: 1px solid #fff;
 
   i#main-image {
+    margin-top: 50px;
+
     &.default {
       @include icon("/images/hero-default", "png", 455px, 632px);
     }
