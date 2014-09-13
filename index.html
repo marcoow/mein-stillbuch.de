@@ -75,10 +75,11 @@
       ga('send', 'pageview');
 
       $(document).ready(function() {
-        $('#features a').click(function() {
+        $('#features a').click(function(event) {
           var feature = $(this).attr('href').replace(/^#/, '');
           $('#main-image').attr('class', feature);
-          console.log();
+          event.stopPropagation();
+          return false;
         });
       });
     </script>
