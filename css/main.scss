@@ -110,13 +110,19 @@ body {
 }
 
 #footer {
-  p.navbar-text {
-    float: none;
-    text-align: center;
+  margin-top: 50px;
 
-    a {
-      color: #fff;
-      text-decoration: none;
+  .container {
+    border-top: 1px solid #fff;
+
+    p.navbar-text {
+      float: none;
+      text-align: center;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
     }
   }
 }
