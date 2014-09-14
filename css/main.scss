@@ -41,8 +41,17 @@ body {
     }
   }
 
-  i#load {
-    @include icon("/images/load", "png", 534px, 76px);
+  .store-link {
+    display: block;
+    text-align: center;
+    background:
+      url("/images/store-link-background-left.png") top left no-repeat,
+      url("/images/store-link-background-right.png") top right no-repeat;
+
+    i#load {
+      margin-top: 20px;
+      @include icon("/images/load", "png", 203px, 60px);
+    }
   }
 
   h1 {
