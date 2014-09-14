@@ -89,6 +89,11 @@
           event.stopPropagation();
           return false;
         });
+
+        var preloadedImages = window.devicePixelRatio > 1 ? ['hero-default@2x.png', 'hero-clock@2x.png', 'hero-history@2x.png', 'hero-bottle@2x.png'] : ['hero-default.png', 'hero-clock.png', 'hero-history.png', 'hero-bottle.png'];
+        $(preloadedImages).each(function(image) {
+          (new Image()).src = '/images/' + this;
+        });
       });
     </script>
 	</body>
