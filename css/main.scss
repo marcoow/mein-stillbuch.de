@@ -67,29 +67,45 @@ body {
 }
 
 #features {
+  padding: 10px 0 0 0;
+
   div {
-    padding: 10px 0 0 0;
     background: url("/images/feature-border.png") right center no-repeat;
 
     &:last-child {
       background: transparent;
     }
-  }
 
-  i.feature-clock {
-    @include icon("/images/feature-clock", "png", 200px,120px);
-  }
+    a {
+      text-align: center;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      font-size: 18px;
 
-  i.feature-history {
-    @include icon("/images/feature-history", "png", 200px,120px);
-  }
+      i {
+        display: block !important;
+        clear: both;
+        margin: 10px auto;
+      }
 
-  i.feature-bottle {
-    @include icon("/images/feature-bottle", "png", 200px,120px);
-  }
+      i.feature-clock {
+        @include icon("/images/icon-clock", "png", 44px, 44px);
+      }
 
-  i.feature-recommended {
-    @include icon("/images/feature-recommended", "png", 200px,120px);
+      i.feature-history {
+        @include icon("/images/icon-history", "png", 44px, 44px);
+      }
+
+      i.feature-bottle {
+        @include icon("/images/icon-bottle", "png", 24px, 44px);
+      }
+
+      i.feature-recommended {
+        @include icon("/images/icon-recommended", "png", 44px, 44px);
+      }
+    }
   }
 }
 
