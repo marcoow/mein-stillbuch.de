@@ -80,7 +80,7 @@ body {
   .store-link {
     display: block;
     text-align: center;
-    margin: 0 0 30px 0;
+    margin: 100px 0 30px 0;
     background:
       url("/images/store-link-background-left.png") top left no-repeat,
       url("/images/store-link-background-right.png") top right no-repeat;
@@ -99,7 +99,6 @@ body {
 
   p {
     font-size: 18px;
-    margin: 0 0 100px 0;
   }
 }
 
@@ -191,10 +190,10 @@ body {
 
     p {
       text-align: left;
-      margin: 0 0 50px 0;
     }
 
     .store-link {
+      margin: 50px 0 0 0;
       display: none;
     }
   }
