@@ -41,6 +41,9 @@ body {
   background: linear-gradient(#ff91a4, #ffa997);
   font-family: 'Karla', sans-serif;
   color: #fff;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+  margin: 0;
 }
 
 #main-content {
@@ -99,6 +102,8 @@ body {
 
   p {
     font-size: 18px;
+    letter-spacing: -1px;
+    line-height: 120%;
   }
 }
 
@@ -157,7 +162,11 @@ body {
 
       a {
         color: #fff;
-        text-decoration: none;
+        text-decoration: underline;
+
+        &.imprint {
+          text-decoration: none;
+        }
       }
     }
   }
