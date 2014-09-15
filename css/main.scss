@@ -33,8 +33,14 @@
   }
 }
 
+html {
+  min-height: 100%;
+}
+
 body {
   margin: 0;
+  padding: 0;
+  min-height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #ff91a4;
@@ -42,8 +48,6 @@ body {
   font-family: 'Karla', sans-serif;
   color: #fff;
   -webkit-font-smoothing: antialiased;
-  padding: 0;
-  margin: 0;
 }
 
 #main-content {
