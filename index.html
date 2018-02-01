@@ -79,21 +79,18 @@ layout: default
     <div class="col-md-2 col-sm-4 col-xs-12">
       <a class="cookie-button pull-right" id="cookie-button" onclick="accept()">Ok</a>
       <script>
-        var banner = $('#cookie-banner');
-        var button = $('#cookie-button');
-
-        function accept() {
-          document.cookie = "cookiesAccepted=true;path=/;expires=Mon, 24 Mar 2319 09:52:10 GMT";
-          banner.remove();
-        }
-
-        function cookiesAccepted() {
+        $(document).ready(function() {
+          var banner = $('#cookie-banner');
           if (document.cookie.includes('cookiesAccepted=true')) {
             banner.remove();
           }
-        }
 
-        window.onload = cookiesAccepted;
+          var button = $('#cookie-button');
+          button.on('click', function() {
+            document.cookie = "cookiesAccepted=true;path=/;expires=Mon, 24 Mar 2319 09:52:10 GMT";
+            banner.remove();
+          });
+        });
       </script>
     </div>
   </div>
